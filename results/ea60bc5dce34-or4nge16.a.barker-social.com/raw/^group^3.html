@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="csrf-token"
+      content="DYUZI2MwyQ8URLfsRfadJD3Vpyr457pM7jw77nCO"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ea60bc5dce34-or4nge16.a.barker-social.com/css/app.css"
+    />
+
+    <title>Barker</title>
+  </head>
+  <body>
+    <div id="root-container" class="container-fluid">
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark my-3 border border-3 border-nav"
+      >
+        <div class="flex flex-column">
+          <a
+            class="navbar-brand"
+            href="https://ea60bc5dce34-or4nge16.a.barker-social.com"
+          >
+            <img
+              src="https://ea60bc5dce34-or4nge16.a.barker-social.com/images/barker_logo.jpg"
+              class="d-inline-block align-top barker-logo"
+              alt="Barker"
+              width="100"
+              height="100"
+            />
+            <br />
+            BARKER
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com"
+              >
+                <i class="fad fa-home-lg fa-2x text-info"></i>
+                <br />
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/group"
+              >
+                <i class="fad fa-layer-group fa-2x communities"></i>
+                <br />
+                Communities
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/tip"
+              >
+                <i class="fas fa-lightbulb fa-2x tips"></i>
+                <br />
+                Dog Tips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/dog"
+              >
+                <i class="fas fa-dog fa-2x dogs"></i>
+                <br />
+                Member Dogs
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/register"
+              >
+                <i class="fad fa-user-plus fa-2x text-primary"></i>
+                <br />
+                Join BARKER
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/login?returnUrl=%2F"
+              >
+                <i class="fad fa-sign-in fa-2x login"></i>
+                <br />
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr class="mb-3" />
+
+      <div id="content-container" class="m-auto">
+        <div id="errorMsg"></div>
+
+        <div id="confirm-delete" title="Delete post?" style="display: none">
+          <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Are you sure you want to delete this post?
+          </p>
+        </div>
+
+        <div id="show-likes" title="Likes" style="display: none">
+          <p></p>
+        </div>
+
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <h2 class="ml-3 mr-3">The Poodle Group</h2>
+                <form
+                  method="post"
+                  action="https://ea60bc5dce34-or4nge16.a.barker-social.com/group/3/join"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="DYUZI2MwyQ8URLfsRfadJD3Vpyr457pM7jw77nCO"
+                  />
+                  <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+              </div>
+              <p></p>
+              <p id="group_description">
+                <b>About:</b> You know what it is! Poodle lovers unite
+              </p>
+              <hr />
+            </div>
+            <div class="col-4">
+              <p>
+                <i class="fad fa-calendar-alt text-info fa-2x mb-2"></i> Group
+                created May 2025
+              </p>
+              <p><i class="fad fa-eye fa-2x"></i> Group type: Public</p>
+              <p>
+                <i class="fas fa-language language fa-2x"></i> Language:
+                Simplified Chinese
+              </p>
+              <p><i class="fas fa-globe location fa-2x"></i> Location: Niger</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-lg-10 mx-auto mt-5">
+          <div
+            class="card bg-light my-4 clickable post-body"
+            data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/180"
+            data-delete="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/180"
+          >
+            <div class="card-header">
+              <div class="row">
+                <div class="col-4 col-lg-2">
+                  <a
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/hyatt.arch"
+                  >
+                    <img
+                      class="border border-primary rounded-circle align-middle img-fluid"
+                      src="/storage/profile_pictures/FGbtTl5NA2e5EqKX0s1tuA6F7oVnmVNdYUg8n1KJ.jpg"
+                      alt="Darion Dooley"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 col-lg-10 mt-2 px-0">
+                  <a
+                    class="h5"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/hyatt.arch"
+                  >
+                    Darion Dooley</a
+                  >
+
+                  <!--
+                <span class="rounded-pill float-right p-1">
+                    Root Admin
+                    <i title="rootadmin" class="fas fa-wrench"></i>
+                </span>
+                <span class="rounded-pill float-right p-1">
+                    Moderator
+                    <i title="moderator" class="fas fa-wrench"></i>
+                </span>
+                -->
+
+                  <br />
+                  <span>&commat;hyatt.arch </span>
+                  <br />
+                  <span><i class="fas fa-clock"></i> Apr 20</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                be safe everyone, keep your distance and don&#039;t forget to
+                tell your friends and family you love them &lt;3
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-3">
+                  <i class="far fa-comment fa-lg text-primary fa-2x"></i>
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+                <div class="col-3 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-link like p-0 border-0"
+                    data-action="like"
+                    data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/like/180"
+                    data-viewlikes="https://ea60bc5dce34-or4nge16.a.barker-social.com/likes/180"
+                  >
+                    <i class="far fa-heart fa-lg fa-2x"></i>
+                  </button>
+
+                  <strong class="ml-1 post-counter">1</strong>
+                </div>
+
+                <div class="col-6 text-right">
+                  <a
+                    class="btn btn-info"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/180/reply"
+                  >
+                    Add Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-light my-4 clickable post-body"
+            data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/451"
+            data-delete="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/451"
+          >
+            <div class="card-header">
+              <div class="row">
+                <div class="col-4 col-lg-2">
+                  <a
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/maxie05"
+                  >
+                    <img
+                      class="border border-primary rounded-circle align-middle img-fluid"
+                      src="/images/profile_blank.png"
+                      alt="Joel Becker"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 col-lg-10 mt-2 px-0">
+                  <a
+                    class="h5"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/maxie05"
+                  >
+                    <span class="staff">
+                      <i title="Staff" class="fas fa-wrench"></i>
+                    </span>
+                    Joel Becker</a
+                  >
+
+                  <!--
+                <span class="rounded-pill float-right p-1">
+                    Root Admin
+                    <i title="rootadmin" class="fas fa-wrench"></i>
+                </span>
+                <span class="rounded-pill float-right p-1">
+                    Moderator
+                    <i title="moderator" class="fas fa-wrench"></i>
+                </span>
+                -->
+
+                  <br />
+                  <span>&commat;maxie05 </span>
+                  <br />
+                  <span><i class="fas fa-clock"></i> Apr 11</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                Jonno wants to go for a walk but i&#039;ve lost his collar, he
+                is going crazy wanting to go for walkies. ARGH. Where is his
+                collar ?!!
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-3">
+                  <i class="far fa-comment fa-lg text-primary fa-2x"></i>
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+                <div class="col-3 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-link like p-0 border-0"
+                    data-action="like"
+                    data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/like/451"
+                    data-viewlikes="https://ea60bc5dce34-or4nge16.a.barker-social.com/likes/451"
+                  >
+                    <i class="far fa-heart fa-lg fa-2x"></i>
+                  </button>
+
+                  <strong class="ml-1 post-counter">1</strong>
+                </div>
+
+                <div class="col-6 text-right">
+                  <a
+                    class="btn btn-info"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/451/reply"
+                  >
+                    Add Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-light my-4 clickable post-body"
+            data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/177"
+            data-delete="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/177"
+          >
+            <div class="card-header">
+              <div class="row">
+                <div class="col-4 col-lg-2">
+                  <a
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/hyatt.arch"
+                  >
+                    <img
+                      class="border border-primary rounded-circle align-middle img-fluid"
+                      src="/storage/profile_pictures/FGbtTl5NA2e5EqKX0s1tuA6F7oVnmVNdYUg8n1KJ.jpg"
+                      alt="Darion Dooley"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 col-lg-10 mt-2 px-0">
+                  <a
+                    class="h5"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/hyatt.arch"
+                  >
+                    Darion Dooley</a
+                  >
+
+                  <!--
+                <span class="rounded-pill float-right p-1">
+                    Root Admin
+                    <i title="rootadmin" class="fas fa-wrench"></i>
+                </span>
+                <span class="rounded-pill float-right p-1">
+                    Moderator
+                    <i title="moderator" class="fas fa-wrench"></i>
+                </span>
+                -->
+
+                  <br />
+                  <span>&commat;hyatt.arch </span>
+                  <br />
+                  <span><i class="fas fa-clock"></i> Apr 10</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                DREADING today, nail cutting day. Snowy hates her nails being
+                cut :( wish us luck
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-3">
+                  <i class="far fa-comment fa-lg text-primary fa-2x"></i>
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+                <div class="col-3 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-link like p-0 border-0"
+                    data-action="like"
+                    data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/like/177"
+                    data-viewlikes="https://ea60bc5dce34-or4nge16.a.barker-social.com/likes/177"
+                  >
+                    <i class="far fa-heart fa-lg fa-2x"></i>
+                  </button>
+
+                  <strong class="ml-1 post-counter">2</strong>
+                </div>
+
+                <div class="col-6 text-right">
+                  <a
+                    class="btn btn-info"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/177/reply"
+                  >
+                    Add Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-light my-4 clickable post-body"
+            data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/630"
+            data-delete="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/630"
+          >
+            <div class="card-header">
+              <div class="row">
+                <div class="col-4 col-lg-2">
+                  <a
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/lonzo17"
+                  >
+                    <img
+                      class="border border-primary rounded-circle align-middle img-fluid"
+                      src="/images/profile_blank.png"
+                      alt="Audra Koepp"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 col-lg-10 mt-2 px-0">
+                  <a
+                    class="h5"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/lonzo17"
+                  >
+                    Audra Koepp</a
+                  >
+
+                  <!--
+                <span class="rounded-pill float-right p-1">
+                    Root Admin
+                    <i title="rootadmin" class="fas fa-wrench"></i>
+                </span>
+                <span class="rounded-pill float-right p-1">
+                    Moderator
+                    <i title="moderator" class="fas fa-wrench"></i>
+                </span>
+                -->
+
+                  <br />
+                  <span>&commat;lonzo17 </span>
+                  <br />
+                  <span><i class="fas fa-clock"></i> Mar 29</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                Among wild dogs and wolves, the cooperative hunting pack
+                includes both males and females, and they provision both pups
+                and a nursing mother. There&#039;s a random fun fact for you
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-3">
+                  <i class="far fa-comment fa-lg text-primary fa-2x"></i>
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+                <div class="col-3 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-link like p-0 border-0"
+                    data-action="like"
+                    data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/like/630"
+                    data-viewlikes="https://ea60bc5dce34-or4nge16.a.barker-social.com/likes/630"
+                  >
+                    <i class="far fa-heart fa-lg fa-2x"></i>
+                  </button>
+
+                  <strong class="ml-1 post-counter">1</strong>
+                </div>
+
+                <div class="col-6 text-right">
+                  <a
+                    class="btn btn-info"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/630/reply"
+                  >
+                    Add Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-light my-4 clickable post-body"
+            data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/448"
+            data-delete="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/448"
+          >
+            <div class="card-header">
+              <div class="row">
+                <div class="col-4 col-lg-2">
+                  <a
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/maxie05"
+                  >
+                    <img
+                      class="border border-primary rounded-circle align-middle img-fluid"
+                      src="/images/profile_blank.png"
+                      alt="Joel Becker"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 col-lg-10 mt-2 px-0">
+                  <a
+                    class="h5"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/profile/maxie05"
+                  >
+                    <span class="staff">
+                      <i title="Staff" class="fas fa-wrench"></i>
+                    </span>
+                    Joel Becker</a
+                  >
+
+                  <!--
+                <span class="rounded-pill float-right p-1">
+                    Root Admin
+                    <i title="rootadmin" class="fas fa-wrench"></i>
+                </span>
+                <span class="rounded-pill float-right p-1">
+                    Moderator
+                    <i title="moderator" class="fas fa-wrench"></i>
+                </span>
+                -->
+
+                  <br />
+                  <span>&commat;maxie05 </span>
+                  <br />
+                  <span><i class="fas fa-clock"></i> Mar 17</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                Jomar message me please, I have found your dogs collar down leet
+                street. give me a ring on 01337 73310
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-3">
+                  <i class="far fa-comment fa-lg text-primary fa-2x"></i>
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+                <div class="col-3 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-link like p-0 border-0"
+                    data-action="like"
+                    data-target="https://ea60bc5dce34-or4nge16.a.barker-social.com/like/448"
+                    data-viewlikes="https://ea60bc5dce34-or4nge16.a.barker-social.com/likes/448"
+                  >
+                    <i class="far fa-heart fa-lg fa-2x"></i>
+                  </button>
+
+                  <strong class="ml-1 post-counter">0</strong>
+                </div>
+
+                <div class="col-6 text-right">
+                  <a
+                    class="btn btn-info"
+                    href="https://ea60bc5dce34-or4nge16.a.barker-social.com/post/448/reply"
+                  >
+                    Add Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f750f9d33e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/autoresize.jquery.js"></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/app.js"></script>
+
+    <!--
+      I don't think we need this stuff that Patrice was working on anymore?
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/api.js"></script>
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/posts.js"></script>
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/search.js"></script>
+    -->
+
+    <!--
+        Staff are now testing it, but users can't get it yet
+      -->
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/premium.js"></script>
+    <script>
+      "use strict";
+      var loadPostsPage = 2;
+
+      $(window).scroll(function () {
+        if (
+          $(window).scrollTop() ==
+          $(document).height() - $(window).height()
+        ) {
+          loadMore();
+        }
+      });
+
+      function loadMore() {
+        $.ajax({
+          url: "https://ea60bc5dce34-or4nge16.a.barker-social.com/post/recent/group/3",
+          method: "GET",
+          data: { page: loadPostsPage },
+          success: function (result) {
+            var html = "";
+
+            $.each(result, function () {
+              html += this;
+            });
+
+            $("div.card:last").after(html);
+
+            loadPostsPage++;
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

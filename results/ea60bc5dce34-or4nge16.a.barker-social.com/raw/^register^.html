@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="csrf-token"
+      content="b1TZ7veqkV558ww2Twv56fPJJbS8JwfS45KVlLcS"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ea60bc5dce34-or4nge16.a.barker-social.com/css/app.css"
+    />
+
+    <title>Barker</title>
+  </head>
+  <body>
+    <div id="root-container" class="container-fluid">
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark my-3 border border-3 border-nav"
+      >
+        <div class="flex flex-column">
+          <a
+            class="navbar-brand"
+            href="https://ea60bc5dce34-or4nge16.a.barker-social.com"
+          >
+            <img
+              src="https://ea60bc5dce34-or4nge16.a.barker-social.com/images/barker_logo.jpg"
+              class="d-inline-block align-top barker-logo"
+              alt="Barker"
+              width="100"
+              height="100"
+            />
+            <br />
+            BARKER
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com"
+              >
+                <i class="fad fa-home-lg fa-2x text-info"></i>
+                <br />
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/group"
+              >
+                <i class="fad fa-layer-group fa-2x communities"></i>
+                <br />
+                Communities
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/tip"
+              >
+                <i class="fas fa-lightbulb fa-2x tips"></i>
+                <br />
+                Dog Tips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/dog"
+              >
+                <i class="fas fa-dog fa-2x dogs"></i>
+                <br />
+                Member Dogs
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-center">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/register"
+              >
+                <i class="fad fa-user-plus fa-2x text-primary"></i>
+                <br />
+                Join BARKER
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://ea60bc5dce34-or4nge16.a.barker-social.com/login?returnUrl=%2F"
+              >
+                <i class="fad fa-sign-in fa-2x login"></i>
+                <br />
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr class="mb-3" />
+
+      <div id="content-container" class="m-auto">
+        <div id="errorMsg"></div>
+
+        <div id="confirm-delete" title="Delete post?" style="display: none">
+          <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Are you sure you want to delete this post?
+          </p>
+        </div>
+
+        <div id="show-likes" title="Likes" style="display: none">
+          <p></p>
+        </div>
+
+        <div class="alert alert-danger overflow-auto" role="alert">
+          <i class="fas fa-skull-crossbones float-left fa-2x mr-2"></i>
+          This web application has been made intentionally insecure. Please do
+          not enter any personal information.
+        </div>
+        <h2>Register a new account</h2>
+
+        <form
+          id="register"
+          class="needs-validation"
+          method="post"
+          action="https://ea60bc5dce34-or4nge16.a.barker-social.com/register"
+          enctype="multipart/form-data"
+          novalidate
+        >
+          <input
+            type="hidden"
+            name="_token"
+            value="b1TZ7veqkV558ww2Twv56fPJJbS8JwfS45KVlLcS"
+          />
+          <div id="registerAccordion">
+            <h3>
+              Basic account details
+              <i
+                id="basic-error"
+                class="fas fa-exclamation-triangle error d-none"
+              ></i>
+            </h3>
+            <div id="basic-container">
+              <div class="form-group">
+                <label for="email">E-mail address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  value=""
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid e-mail address
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a password of at least 8 characters
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password_confirmation">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password_confirmation"
+                  name="password_confirmation"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please make sure your password matches
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pin">PIN code</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pin"
+                  name="pin"
+                  minlength="8"
+                  maxlength="8"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter an eight digit PIN code (numbers only)
+                </div>
+                <small class="text-muted"
+                  >A PIN code can be used to reset your password</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    value=""
+                    maxlength="64"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please choose a unique username
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>
+              Appearance
+              <i
+                id="appearance-error"
+                class="fas fa-exclamation-triangle error d-none"
+              ></i>
+            </h3>
+            <div id="appearance-container">
+              <div class="form-group">
+                <p>Profile Picture</p>
+                <input
+                  type="file"
+                  name="profile_image"
+                  id="profile_image"
+                  class="d-none"
+                />
+                <a href="#" data-cmd="click" data-target="profile_image"
+                  ><i class="fas fa-file-upload fa-2x"></i
+                ></a>
+              </div>
+              <div class="form-group">
+                <label for="profile_name">Display Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="profile_name"
+                  name="profile_name"
+                  value=""
+                  maxlength="64"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a display name</div>
+              </div>
+              <div class="form-group">
+                <label for="profile_description">Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="profile_description"
+                  name="profile_description"
+                  value=""
+                  maxlength="128"
+                />
+              </div>
+            </div>
+            <h3>
+              Buy Premium
+              <i
+                id="premium-error"
+                class="fas fa-exclamation-triangle error d-none"
+              ></i>
+            </h3>
+            <div id="premium-container">
+              <h2>
+                <span class="premium"
+                  ><i title="Premium User" class="fas fa-gem"></i
+                ></span>
+                Coming soon!
+              </h2>
+              <p>Premium includes the following benefits:</p>
+              <ul>
+                <li>See who has liked all of your posts</li>
+                <li>See all of the likes for a post</li>
+                <li>Get a premium icon next to your name</li>
+                <li>Upload a custom banner for your profile</li>
+              </ul>
+              <hr />
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="premium_card">Card number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="premium_card"
+                    name="premium_card"
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+                    disabled
+                  />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="premium_expiry">Expiry Date</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card_expiry"
+                    name="card_expiry"
+                    placeholder="mm/yyyy"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label for="premium_csc">CSC</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="premium_csc"
+                    name="premium_csc"
+                    placeholder="XXX"
+                    disabled
+                  />
+                </div>
+              </div>
+              <input
+                type="hidden"
+                id="premium_bought"
+                name="premium_bought"
+                value="0"
+              />
+              <p>Charge: £4.95 (ex VAT)</p>
+              <p>
+                Please note we can ONLY accept American Express at this time
+              </p>
+            </div>
+            <h3>
+              Finishing up
+              <i
+                id="finish-error"
+                class="fas fa-exclamation-triangle error d-none"
+              ></i>
+            </h3>
+            <div id="finish-container">
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="remember"
+                  name="remember"
+                />
+                <label class="form-check-label" for="remember"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f750f9d33e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/autoresize.jquery.js"></script>
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/app.js"></script>
+
+    <!--
+      I don't think we need this stuff that Patrice was working on anymore?
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/api.js"></script>
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/posts.js"></script>
+      <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/search.js"></script>
+    -->
+
+    <!--
+        Staff are now testing it, but users can't get it yet
+      -->
+    <script src="https://ea60bc5dce34-or4nge16.a.barker-social.com/js/premium.js"></script>
+    <script>
+      "use strict";
+      $(function () {
+        $("#registerAccordion").accordion();
+
+        var aff_id = "";
+
+        // TODO: tie this ID into our analytics for use when we start getting traffic through affiliates
+      });
+    </script>
+  </body>
+</html>
