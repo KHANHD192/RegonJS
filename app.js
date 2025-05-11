@@ -1,15 +1,5 @@
 /**
- * 
- * step1.js: Crawl và tải file JS về
-
-step2.js: Format với prettier
-
-step3.js: Gọi LinkFinder (qua child_process)
-
-step4.js: Gọi trufflehog (qua child_process)
-
-step5.js: Gọi semgrep
- * 
+@author: seck19
 */
 const fs = require('fs');
 const path = require('path');
