@@ -1,0 +1,1455 @@
+                     
+                     
+┌───────────────────┐
+│ 227 Code Findings │
+└───────────────────┘
+                                                                
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          826┆ <script
+          827┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          828┆   crossorigin="anonymous"
+          829┆ ></script>
+            ⋮┆----------------------------------------
+          830┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          831┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          832┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          836┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          837┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          838┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          844┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                             
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^debugger^home.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/dbghome.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^dog^new.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          481┆ <script
+          482┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          483┆   crossorigin="anonymous"
+          484┆ ></script>
+            ⋮┆----------------------------------------
+          485┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          486┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          487┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          491┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          492┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          493┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          499┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                              
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^doggy-date^new.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          348┆ <script
+          349┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          350┆   crossorigin="anonymous"
+          351┆ ></script>
+            ⋮┆----------------------------------------
+          352┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          353┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          354┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          358┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          359┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          360┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          366┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^1.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/1/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          277┆ <script
+          278┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          279┆   crossorigin="anonymous"
+          280┆ ></script>
+            ⋮┆----------------------------------------
+          281┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          283┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          287┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          288┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          289┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          295┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                        
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^10.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/10/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          681┆ <script
+          682┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          683┆   crossorigin="anonymous"
+          684┆ ></script>
+            ⋮┆----------------------------------------
+          685┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          686┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          687┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          691┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          692┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          693┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          699┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^2.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/2/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          277┆ <script
+          278┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          279┆   crossorigin="anonymous"
+          280┆ ></script>
+            ⋮┆----------------------------------------
+          281┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          283┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          287┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          288┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          289┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          295┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^3.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/3/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          276┆ <script
+          277┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          278┆   crossorigin="anonymous"
+          279┆ ></script>
+            ⋮┆----------------------------------------
+          280┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          281┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          286┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          287┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          288┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          294┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^4.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/4/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          708┆ <script
+          709┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          710┆   crossorigin="anonymous"
+          711┆ ></script>
+            ⋮┆----------------------------------------
+          712┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          713┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          714┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          718┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          719┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          720┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          726┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^5.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/5/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          709┆ <script
+          710┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          711┆   crossorigin="anonymous"
+          712┆ ></script>
+            ⋮┆----------------------------------------
+          713┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          714┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          715┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          719┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          720┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          721┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          727┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^6.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/6/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          272┆ <script
+          273┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          274┆   crossorigin="anonymous"
+          275┆ ></script>
+            ⋮┆----------------------------------------
+          276┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          277┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          278┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          283┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          284┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          290┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^7.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/7/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          276┆ <script
+          277┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          278┆   crossorigin="anonymous"
+          279┆ ></script>
+            ⋮┆----------------------------------------
+          280┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          281┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          286┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          287┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          288┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          294┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^8.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/8/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          689┆ <script
+          690┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          691┆   crossorigin="anonymous"
+          692┆ ></script>
+            ⋮┆----------------------------------------
+          693┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          694┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          695┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          699┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          700┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          701┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          707┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^group^9.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+          217┆ <form
+          218┆   method="post"
+          219┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/group/9/join"
+          220┆ >
+          221┆   <input
+          222┆     type="hidden"
+          223┆     name="_token"
+          224┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          225┆   />
+          226┆   <button type="submit" class="btn btn-primary">Join</button>
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          272┆ <script
+          273┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          274┆   crossorigin="anonymous"
+          275┆ ></script>
+            ⋮┆----------------------------------------
+          276┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          277┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          278┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          282┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          283┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          284┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          290┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                       
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^js^app.js.js
+    ❯❱ javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp
+          RegExp() called with a `key` function argument, this might allow an attacker to cause a Regular     
+          Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For  
+          this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-      
+          controlled input, consider performing input validation or use a regex checking/sanitization library 
+          such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to
+          ReDoS.                                                                                              
+          Details: https://sg.run/gr65                                                                        
+                                                                                                              
+           30┆ var matches = location.hash.match(new RegExp(key + "=([^&]*)"));
+   
+   ❯❯❱ javascript.browser.security.insecure-document-method.insecure-document-method
+          User controlled data in methods like `innerHTML`, `outerHTML` or `document.write` is an anti-pattern
+          that can lead to XSS vulnerabilities                                                                
+          Details: https://sg.run/LwA9                                                                        
+                                                                                                              
+           88┆ document.getElementById("errorMsg").innerHTML =
+           89┆   "<div class='alert alert-danger mt-3 d-inline-block' role='alert'> <span class='badge
+               badge-secondary'>Error " +                                                             
+           90┆   errorCode +
+           91┆   "</span> - These credentials do not match our records.</div>";
+            ⋮┆----------------------------------------
+           94┆ document.getElementById("errorMsg").innerHTML =
+           95┆   "<div class='alert alert-danger mt-3 d-inline-block' role='alert'> <span class='badge
+               badge-secondary'>Error " +                                                             
+           96┆   errorCode +
+           97┆   "</span> - The email must be a valid email address. </div>";
+            ⋮┆----------------------------------------
+           99┆ document.getElementById("errorMsg").innerHTML =
+          100┆   "<div class='alert alert-danger mt-3 d-inline-block' role='alert'> Error " +
+          101┆   errorCode +
+          102┆   " - An unexpected error occured. </div>";
+                                                                               
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^profile^Patrice.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          485┆ <script
+          486┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          487┆   crossorigin="anonymous"
+          488┆ ></script>
+            ⋮┆----------------------------------------
+          489┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          490┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          491┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          495┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          496┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          497┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          503┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                              
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^profile^seck19.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          296┆ <script
+          297┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          298┆   crossorigin="anonymous"
+          299┆ ></script>
+            ⋮┆----------------------------------------
+          300┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          301┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          302┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          306┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          307┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          308┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          314┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                        
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^register.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          477┆ <script
+          478┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          479┆   crossorigin="anonymous"
+          480┆ ></script>
+            ⋮┆----------------------------------------
+          481┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          482┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          483┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          487┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          488┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          489┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          495┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                         
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^register^.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          477┆ <script
+          478┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          479┆   crossorigin="anonymous"
+          480┆ ></script>
+            ⋮┆----------------------------------------
+          481┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          482┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          483┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          487┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          488┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          489┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          495┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                             
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^settings^edit.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          372┆ <script
+          373┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          374┆   crossorigin="anonymous"
+          375┆ ></script>
+            ⋮┆----------------------------------------
+          376┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          377┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          378┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          382┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          383┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          384┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          390┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+                                                                   
+    results/5cc99203c5d2-or4nge16.a.barker-social.com/raw/^tip.html
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+           23┆ <link
+           24┆   rel="stylesheet"
+           25┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.css"                                                                              
+           26┆ />
+            ⋮┆----------------------------------------
+           27┆ <link
+           28┆   rel="stylesheet"
+           29┆   href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+           30┆ />
+   
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           94┆ <form
+           95┆   class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+           96┆   method="POST"
+           97┆   action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+           98┆ >
+           99┆   <input
+          100┆     type="hidden"
+          101┆     name="_token"
+          102┆     value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          103┆   />
+             [hid 7 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ html.security.plaintext-http-link.plaintext-http-link
+          This link points to a plaintext HTTP URL. Prefer an encrypted HTTPS URL if possible.
+          Details: https://sg.run/RA5q                                                        
+                                                                                              
+          448┆ <a
+          449┆   class="page-link"
+          450┆   href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=2"
+          451┆   rel="prev"
+          452┆   aria-label="&laquo; Previous"
+          453┆   >&lsaquo;</a
+            ⋮┆----------------------------------------
+          458┆ <a
+          459┆   class="page-link"
+          460┆   href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=1"
+          461┆   >1</a
+            ⋮┆----------------------------------------
+          465┆ <a
+          466┆   class="page-link"
+          467┆   href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=2"
+          468┆   >2</a
+   
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+          512┆ <script
+          513┆   src="https://kit.fontawesome.com/f750f9d33e.js"
+          514┆   crossorigin="anonymous"
+          515┆ ></script>
+            ⋮┆----------------------------------------
+          516┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-
+               ui.min.js"></script>                                                                      
+            ⋮┆----------------------------------------
+          517┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-
+               social.com/js/autoresize.jquery.js"></script>       
+            ⋮┆----------------------------------------
+          518┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+            ⋮┆----------------------------------------
+          522┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+            ⋮┆----------------------------------------
+          523┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+            ⋮┆----------------------------------------
+          524┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+            ⋮┆----------------------------------------
+          530┆ <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>

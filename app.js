@@ -14,7 +14,6 @@ let projectName = '';
 let axiosInstance = axios.create({
     // httpsAgent: agent,
     headers: {
-
         'Cookie': process.env.COOKIE
     }
 });
@@ -62,8 +61,8 @@ async function formatJSFile(filePath) {
     return new Promise((resolve, reject) => {
         exec(`prettier --write '${filePath}'`, (error, stdout, stderr) => {
             if (error) {
-                console.error(`Error formatting file ${filePath}:`, error);
-                reject(error);
+              //  console.error(`Error formatting file ${filePath}:`, error);
+                resolve(error);
             } else {
                 console.log(`Formatted file: ${filePath}`);
                 resolve();
@@ -90,7 +89,7 @@ async function executeLinkFinder(filePath) {
         if (!fs.existsSync('./results/'+projectName+'/endpoint')) {
             fs.mkdirSync('./results/'+projectName+'/endpoint', { recursive: true });
         }
-        exec(`python3 ./LinkFinder/linkfinder.py -i "file://${filePath}" -o cli > ./results/${projectName}/endpoint/${path.basename(filePath)}.txt`, (error, stdout, stderr) => {
+        exec(`python3 ./LinkFinder/linkfinder.py -i "file://${filePath}" -o  ./results/${projectName}/endpoint/${path.basename(filePath)}.html`, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error executing LinkFinder on file ${filePath}:`, error);
                 reject(error);

@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="csrf-token"
+      content="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+    />
+    <meta name="authenticated" content="1" />
+
+    <meta name="user-type" content="not_premium" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+    />
+
+    <title>Barker</title>
+  </head>
+  <body>
+    <div id="root-container" class="container-fluid">
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark my-3 border border-3 border-nav"
+      >
+        <div class="flex flex-column">
+          <a
+            class="navbar-brand"
+            href="https://5cc99203c5d2-or4nge16.a.barker-social.com"
+          >
+            <img
+              src="https://5cc99203c5d2-or4nge16.a.barker-social.com/images/barker_logo.jpg"
+              class="d-inline-block align-top barker-logo"
+              alt="Barker"
+              width="100"
+              height="100"
+            />
+            <br />
+            BARKER
+          </a>
+          <div class="dropdown mx-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="userControlsDropdownMenuButton"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              seck19
+            </button>
+            <div
+              class="dropdown-menu bg-dark"
+              aria-labelledby="userControlsDropdownMenuButton"
+            >
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/dog/owner/seck19"
+              >
+                <i class="fas fa-dog-leashed fa-2x dogs"></i>
+                My dogs
+              </a>
+              <hr class="bg-white" />
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/seck19"
+              >
+                <i class="fad fa-user fa-2x profile"></i>
+                My profile
+              </a>
+              <hr class="bg-white" />
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/settings/edit"
+              >
+                <i class="fas fa-cogs fa-2x settings"></i>
+                Settings
+              </a>
+
+              <hr class="bg-white" />
+
+              <form
+                class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+                method="POST"
+                action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+                />
+                <button
+                  class="btn btn-outline-danger my-2 my-sm-0 m-auto mb-2"
+                  type="submit"
+                >
+                  Log out
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com"
+              >
+                <i class="fad fa-home-lg fa-2x text-info"></i>
+                <br />
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/group"
+              >
+                <i class="fad fa-layer-group fa-2x communities"></i>
+                <br />
+                Communities
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/tip"
+              >
+                <i class="fas fa-lightbulb fa-2x tips"></i>
+                <br />
+                Dog Tips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/dog"
+              >
+                <i class="fas fa-dog fa-2x dogs"></i>
+                <br />
+                Member Dogs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/doggy-date"
+              >
+                <i class="fas fa-calendar-lines-pen fa-2x text-info"></i>
+                <br />
+                Doggy Dates
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.kreative.barker-social.com"
+              >
+                <i class="fad fa-gift fa-2x kreative"></i>
+                <br />
+                Kreative
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-center"></ul>
+        </div>
+      </nav>
+
+      <hr class="mb-3" />
+
+      <div id="content-container" class="m-auto">
+        <div id="errorMsg"></div>
+
+        <div id="confirm-delete" title="Delete post?" style="display: none">
+          <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Are you sure you want to delete this post?
+          </p>
+        </div>
+
+        <div id="show-likes" title="Likes" style="display: none">
+          <p></p>
+        </div>
+
+        <div class="container">
+          <img
+            class="w-80 d-block mx-auto pb-2"
+            src="https://5cc99203c5d2-or4nge16.a.barker-social.com/images/doggotips.png"
+            alt="Barker Tips"
+          />
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/alphonso.medhurst"
+                    >Pascale Gerlach</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Using a front clip harness can help prevent your dog from
+                    pulling on the leash. Good doggy!
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Aug 20</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/javon.kutch"
+                    >Bradford Gorczany</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Make training more fun by switching up the rewards / treats
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Aug 9</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/owolff"
+                    >Brigitte Pagac</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Dogs love to chase things. Get the bubble machine out and
+                    let your dog go wild
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Jul 17</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/karolann.baumbach"
+                    >Gene Dare</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Don&#039;t throw your old clothes out, use them for a tug of
+                    war game with your best friend
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Jul 16</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/karolann.baumbach"
+                    >Gene Dare</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Walking your dog keeps their nails trimmed, but that&#039;s
+                    only one of many benefits of walking your dog multiple times
+                    a day!
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Jul 9</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/owolff"
+                    >Brigitte Pagac</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Did you know walnuts are great for covering up scratch marks
+                    on your furniture?
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published Jun 9</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/alphonso.medhurst"
+                    >Pascale Gerlach</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">Microchip your dog!</p>
+                </div>
+                <div class="card-footer text-muted">Published Jun 8</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/mreichert"
+                    >Mr. Eli Emmerich MD</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    We humans brush our teeth, and so should your dog! Make sure
+                    to add brushing your dogs teeth into their grooming routine.
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published May 29</div>
+              </div>
+              <div class="card bg-tip my-4">
+                <div class="card-header">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i> Tip by
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/mreichert"
+                    >Mr. Eli Emmerich MD</a
+                  >
+
+                  <div class="float-right"></div>
+                </div>
+                <div class="card-body">
+                  <p class="card-test">
+                    Kong toys are a dogs best friend. Stuff them of their
+                    favourite treat (peanut butter in snowys case!) and your dog
+                    will be in heaven
+                  </p>
+                </div>
+                <div class="card-footer text-muted">Published May 16</div>
+              </div>
+            </div>
+            <div class="col-4 d-none d-lg-block">
+              <div class="card my-4">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-white">
+                    <i class="fas fa-lightbulb fa-2x text-primary"></i> Top Tip
+                    Author
+                  </h5>
+                  <hr class="bg-white" />
+                  <p class="card-text">
+                    <a
+                      href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/mreichert"
+                      >Mr. Eli Emmerich MD</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="card my-4">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-white">
+                    <i class="fas fa-lightbulb fa-2x text-warning"></i>
+                    Best Tip
+                  </h5>
+                  <hr class="bg-white" />
+                  <p class="card-text text-white">
+                    "<i>Place covers over your furniture to keep it fur free!</i
+                    >"
+                  </p>
+                </div>
+                <div class="card-footer text-muted">
+                  By
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/elise.bradtke"
+                    >Mckenna Lubowitz</a
+                  >
+                </div>
+              </div>
+              <div class="card my-4">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-white">
+                    <i class="fas fa-lightbulb fa-2x text-danger"></i> Tip That
+                    Led To the Most Vet Visits
+                  </h5>
+                  <hr class="bg-white" />
+                  <p class="card-text text-white">
+                    "<i
+                      >Make training more fun by switching up the rewards /
+                      treats</i
+                    >"
+                  </p>
+                </div>
+                <div class="card-footer text-muted text-white">
+                  By
+                  <a
+                    href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/alicia74"
+                    >Mateo Brekke</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <h5>Showing tips 21 -29 out of 29</h5>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=2"
+                  rel="prev"
+                  aria-label="&laquo; Previous"
+                  >&lsaquo;</a
+                >
+              </li>
+
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=1"
+                  >1</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="http://5cc99203c5d2-or4nge16.a.barker-social.com/tip?page=2"
+                  >2</a
+                >
+              </li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">3</span>
+              </li>
+
+              <li
+                class="page-item disabled"
+                aria-disabled="true"
+                aria-label="Next &raquo;"
+              >
+                <span class="page-link" aria-hidden="true">&rsaquo;</span>
+              </li>
+            </ul>
+          </nav>
+
+          <hr />
+        </div>
+
+        <div id="confirm-delete-tip" title="Delete tip?" style="display: none">
+          <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Are you sure you want to delete this tip?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f750f9d33e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/autoresize.jquery.js"></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+
+    <!--
+      I don't think we need this stuff that Patrice was working on anymore?
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+    -->
+
+    <!--
+        Staff are now testing it, but users can't get it yet
+      -->
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+    <script>
+      "use strict";
+      $("div.card").on("click", "button.delete-tip", function (e) {
+        e.stopPropagation();
+        var tip = $(e.target).parents(".card");
+        var form = $(tip).find("form.delete-tip");
+
+        $("#confirm-delete-tip").dialog({
+          autoOpen: true,
+          resizeable: false,
+          width: "auto",
+          height: "auto",
+          modal: true,
+          buttons: {
+            "Delete Tip": function () {
+              form.submit();
+              $(this).dialog("close");
+            },
+            Cancel: function () {
+              $(this).dialog("close");
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

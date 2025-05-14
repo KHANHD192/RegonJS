@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="csrf-token"
+      content="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+    />
+    <meta name="authenticated" content="1" />
+
+    <meta name="user-type" content="not_premium" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://5cc99203c5d2-or4nge16.a.barker-social.com/css/app.css"
+    />
+
+    <title>Barker</title>
+  </head>
+  <body>
+    <div id="root-container" class="container-fluid">
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark my-3 border border-3 border-nav"
+      >
+        <div class="flex flex-column">
+          <a
+            class="navbar-brand"
+            href="https://5cc99203c5d2-or4nge16.a.barker-social.com"
+          >
+            <img
+              src="https://5cc99203c5d2-or4nge16.a.barker-social.com/images/barker_logo.jpg"
+              class="d-inline-block align-top barker-logo"
+              alt="Barker"
+              width="100"
+              height="100"
+            />
+            <br />
+            BARKER
+          </a>
+          <div class="dropdown mx-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="userControlsDropdownMenuButton"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              seck19
+            </button>
+            <div
+              class="dropdown-menu bg-dark"
+              aria-labelledby="userControlsDropdownMenuButton"
+            >
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/dog/owner/seck19"
+              >
+                <i class="fas fa-dog-leashed fa-2x dogs"></i>
+                My dogs
+              </a>
+              <hr class="bg-white" />
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/profile/seck19"
+              >
+                <i class="fad fa-user fa-2x profile"></i>
+                My profile
+              </a>
+              <hr class="bg-white" />
+              <a
+                class="nav-link text-white"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/settings/edit"
+              >
+                <i class="fas fa-cogs fa-2x settings"></i>
+                Settings
+              </a>
+
+              <hr class="bg-white" />
+
+              <form
+                class="form-inline ml-sm-2 my-2 my-lg-0 pb-2"
+                method="POST"
+                action="https://5cc99203c5d2-or4nge16.a.barker-social.com/logout"
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+                />
+                <button
+                  class="btn btn-outline-danger my-2 my-sm-0 m-auto mb-2"
+                  type="submit"
+                >
+                  Log out
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com"
+              >
+                <i class="fad fa-home-lg fa-2x text-info"></i>
+                <br />
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/group"
+              >
+                <i class="fad fa-layer-group fa-2x communities"></i>
+                <br />
+                Communities
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/tip"
+              >
+                <i class="fas fa-lightbulb fa-2x tips"></i>
+                <br />
+                Dog Tips
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/dog"
+              >
+                <i class="fas fa-dog fa-2x dogs"></i>
+                <br />
+                Member Dogs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.barker-social.com/doggy-date"
+              >
+                <i class="fas fa-calendar-lines-pen fa-2x text-info"></i>
+                <br />
+                Doggy Dates
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://5cc99203c5d2-or4nge16.a.kreative.barker-social.com"
+              >
+                <i class="fad fa-gift fa-2x kreative"></i>
+                <br />
+                Kreative
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-center"></ul>
+        </div>
+      </nav>
+
+      <hr class="mb-3" />
+
+      <div id="content-container" class="m-auto">
+        <div id="errorMsg"></div>
+
+        <div id="confirm-delete" title="Delete post?" style="display: none">
+          <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Are you sure you want to delete this post?
+          </p>
+        </div>
+
+        <div id="show-likes" title="Likes" style="display: none">
+          <p></p>
+        </div>
+
+        <h2><i class="fas fa-shield-dog text-info fa-2x"></i> Add your dog</h2>
+        <hr />
+        <form
+          class="needs-validation"
+          method="post"
+          action="https://5cc99203c5d2-or4nge16.a.barker-social.com/dog"
+          enctype="multipart/form-data"
+          novalidate
+        >
+          <input
+            type="hidden"
+            name="_token"
+            value="rI4EZykUBnuVLBUHC1VARXCO4fLENAxEPDjpfB3D"
+          />
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              value=""
+              maxlength="64"
+              required
+            />
+            <div class="invalid-feedback">Please enter your dog's name</div>
+          </div>
+          <div class="form-group">
+            <label for="name">Age</label>
+            <input
+              type="text"
+              class="form-control"
+              id="age"
+              name="age"
+              value=""
+              maxlength="64"
+              required
+            />
+            <div class="invalid-feedback">Please enter your dog's age</div>
+          </div>
+          <div class="form-group">
+            <label for="type">Breed</label>
+
+            <select class="form-control" name="breed" id="breed" required>
+              <option value="" selected disabled>
+                Select your dog's breed...
+              </option>
+              <option value="Affenpinscher">Affenpinscher</option>
+              <option value="Afghan hound">Afghan hound</option>
+              <option value="Airedale terrier">Airedale terrier</option>
+              <option value="Akita">Akita</option>
+              <option value="Alaskan Malamute">Alaskan Malamute</option>
+              <option value="American Staffordshire terrier">
+                American Staffordshire terrier
+              </option>
+              <option value="American water spaniel">
+                American water spaniel
+              </option>
+              <option value="Australian cattle dog">
+                Australian cattle dog
+              </option>
+              <option value="Australian shepherd">Australian shepherd</option>
+              <option value="Australian terrier">Australian terrier</option>
+              <option value="Basenji">Basenji</option>
+              <option value="Basset hound">Basset hound</option>
+              <option value="Beagle">Beagle</option>
+              <option value="Bearded collie">Bearded collie</option>
+              <option value="Bedlington terrier">Bedlington terrier</option>
+              <option value="Bernese mountain dog">Bernese mountain dog</option>
+              <option value="Bichon frise">Bichon frise</option>
+              <option value="Black and tan coonhound">
+                Black and tan coonhound
+              </option>
+              <option value="Bloodhound">Bloodhound</option>
+              <option value="Border collie">Border collie</option>
+              <option value="Border terrier">Border terrier</option>
+              <option value="Borzoi">Borzoi</option>
+              <option value="Boston terrier">Boston terrier</option>
+              <option value="Bouvier des Flandres">Bouvier des Flandres</option>
+              <option value="Boxer">Boxer</option>
+              <option value="Briard">Briard</option>
+              <option value="Brittany">Brittany</option>
+              <option value="Brussels griffon">Brussels griffon</option>
+              <option value="Bull terrier">Bull terrier</option>
+              <option value="Bulldog">Bulldog</option>
+              <option value="Bullmastiff">Bullmastiff</option>
+              <option value="Cairn terrier">Cairn terrier</option>
+              <option value="Canaan dog">Canaan dog</option>
+              <option value="Chesapeake Bay retriever">
+                Chesapeake Bay retriever
+              </option>
+              <option value="Chihuahua">Chihuahua</option>
+              <option value="Chinese crested">Chinese crested</option>
+              <option value="Chinese shar-pei">Chinese shar-pei</option>
+              <option value="chow chow">chow chow</option>
+              <option value="Clumber spaniel">Clumber spaniel</option>
+              <option value="cocker spaniel">cocker spaniel</option>
+              <option value="collie">collie</option>
+              <option value="Curly-coated retriever">
+                Curly-coated retriever
+              </option>
+              <option value="Dachshund">Dachshund</option>
+              <option value="Dalmatian">Dalmatian</option>
+              <option value="Doberman pinscher">Doberman pinscher</option>
+              <option value="English cocker spaniel">
+                English cocker spaniel
+              </option>
+              <option value="English setter">English setter</option>
+              <option value="English springer spaniel">
+                English springer spaniel
+              </option>
+              <option value="English toy spaniel">English toy spaniel</option>
+              <option value="Eskimo dog">Eskimo dog</option>
+              <option value="Finnish spitz">Finnish spitz</option>
+              <option value="Flat-coated retriever">
+                Flat-coated retriever
+              </option>
+              <option value="Fox terrier">Fox terrier</option>
+              <option value="Foxhound">Foxhound</option>
+              <option value="French bulldog">French bulldog</option>
+              <option value="German shepherd">German shepherd</option>
+              <option value="German shorthaired pointer">
+                German shorthaired pointer
+              </option>
+              <option value="German wirehaired pointer">
+                German wirehaired pointer
+              </option>
+              <option value="Golden retriever">Golden retriever</option>
+              <option value="Gordon setter">Gordon setter</option>
+              <option value="Great Dane">Great Dane</option>
+              <option value="Greyhound">Greyhound</option>
+              <option value="Irish setter">Irish setter</option>
+              <option value="Irish water spaniel">Irish water spaniel</option>
+              <option value="Irish wolfhound">Irish wolfhound</option>
+              <option value="Jack Russell terrier">Jack Russell terrier</option>
+              <option value="Japanese spaniel">Japanese spaniel</option>
+              <option value="Keeshond">Keeshond</option>
+              <option value="Kerry blue terrier">Kerry blue terrier</option>
+              <option value="Komondor">Komondor</option>
+              <option value="kuvasz">kuvasz</option>
+              <option value="Labrador retriever">Labrador retriever</option>
+              <option value="Lakeland terrier">Lakeland terrier</option>
+              <option value="Lhasa apso">Lhasa apso</option>
+              <option value="Maltese">Maltese</option>
+              <option value="Manchester terrier">Manchester terrier</option>
+              <option value="Mastiff">Mastiff</option>
+              <option value="Mexican hairless">Mexican hairless</option>
+              <option value="Newfoundland">Newfoundland</option>
+              <option value="Norwegian elkhound">Norwegian elkhound</option>
+              <option value="Norwich terrier">Norwich terrier</option>
+              <option value="Otterhound">Otterhound</option>
+              <option value="Papillon">Papillon</option>
+              <option value="Pekingese">Pekingese</option>
+              <option value="Pointer">Pointer</option>
+              <option value="Pomeranian">Pomeranian</option>
+              <option value="Poodle">Poodle</option>
+              <option value="Pug">Pug</option>
+              <option value="Puli">Puli</option>
+              <option value="Rhodesian ridgeback">Rhodesian ridgeback</option>
+              <option value="Rottweiler">Rottweiler</option>
+              <option value="Saint Bernard">Saint Bernard</option>
+              <option value="Saluki">Saluki</option>
+              <option value="Samoyed">Samoyed</option>
+              <option value="Schipperke">Schipperke</option>
+              <option value="Schnauzer">Schnauzer</option>
+              <option value="Scottish deerhound">Scottish deerhound</option>
+              <option value="Scottish terrier">Scottish terrier</option>
+              <option value="Sealyham terrier">Sealyham terrier</option>
+              <option value="Shetland sheepdog">Shetland sheepdog</option>
+              <option value="Shih tzu">Shih tzu</option>
+              <option value="Siberian husky">Siberian husky</option>
+              <option value="Silky terrier">Silky terrier</option>
+              <option value="Skye terrier">Skye terrier</option>
+              <option value="Staffordshire bull terrier">
+                Staffordshire bull terrier
+              </option>
+              <option value="Soft-coated wheaten terrier">
+                Soft-coated wheaten terrier
+              </option>
+              <option value="Sussex spaniel">Sussex spaniel</option>
+              <option value="Spitz">Spitz</option>
+              <option value="Tibetan terrier">Tibetan terrier</option>
+              <option value="Vizsla">Vizsla</option>
+              <option value="Weimaraner">Weimaraner</option>
+              <option value="Welsh terrier">Welsh terrier</option>
+              <option value="West Highland white terrier">
+                West Highland white terrier
+              </option>
+              <option value="Whippet">Whippet</option>
+              <option value="Yorkshire terrier">Yorkshire terrier</option>
+            </select>
+            <div class="invalid-feedback">Please select your dog's breed</div>
+          </div>
+          <div>
+            <p>Picture</p>
+            <div id="uploaded_image">
+              <img src="//:0" class="img-fluid d-none" alt="Your dog" />
+              <strong id="image-not-set">Image not yet set</strong>
+
+              <div id="progressbar" class="d-none">
+                <div class="progress-label">Uploading image...</div>
+              </div>
+
+              <strong id="image-error" class="d-none text-danger"
+                >There was an error uploading the image</strong
+              >
+            </div>
+
+            <hr />
+
+            <div class="form-group">
+              <p>Upload an image</p>
+              <input type="file" name="image" id="image" class="d-none" />
+              <a href="#" data-cmd="click" data-target="image"
+                ><i class="fas fa-file-upload fa-2x"></i
+              ></a>
+            </div>
+            <p>- OR -</p>
+            <div class="form-group mt-3">
+              <label for="image_url">Provide a URL to an image</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="image_url"
+                  id="image_url"
+                  placeholder="http://"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="button"
+                    id="image_url_download"
+                    class="btn btn-primary"
+                  >
+                    Get Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input
+            type="hidden"
+            name="upload_session"
+            id="upload_session"
+            value="H647DMFDi7Ux1qry"
+          />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br />
+        <hr />
+        <br />
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f750f9d33e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/autoresize.jquery.js"></script>
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/app.js"></script>
+
+    <!--
+      I don't think we need this stuff that Patrice was working on anymore?
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/api.js"></script>
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/posts.js"></script>
+      <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/search.js"></script>
+    -->
+
+    <!--
+        Staff are now testing it, but users can't get it yet
+      -->
+    <script src="https://5cc99203c5d2-or4nge16.a.barker-social.com/js/premium.js"></script>
+    <script>
+      "use strict";
+      $(function () {
+        $("#progressbar").progressbar({
+          value: false,
+        });
+      });
+
+      function showProgressBar() {
+        $("#progressbar").removeClass("d-none");
+      }
+
+      function hideProgressBar() {
+        $("#progressbar").addClass("d-none");
+      }
+
+      function startUploadNewImage() {
+        $("#image-not-set").addClass("d-none");
+        $("#image-error").addClass("d-none");
+        $("#uploaded_image img").addClass("d-none");
+        showProgressBar();
+      }
+
+      function imageError() {
+        hideProgressBar();
+        $("#image-error").removeClass("d-none");
+      }
+
+      function setImage(src) {
+        hideProgressBar();
+        $("#uploaded_image img").attr("src", src);
+        $("#uploaded_image img").removeClass("d-none");
+      }
+
+      $("#image").click(function (e) {
+        $("#image").val("");
+      });
+
+      $("#image").change(function (e) {
+        if (!$("#image")[0].files.length) {
+          return;
+        }
+
+        startUploadNewImage();
+
+        var formData = new FormData();
+        formData.append("upload_session", $("#upload_session").val());
+        formData.append("image", $("#image")[0].files[0]);
+
+        $.ajax({
+          url: "https://5cc99203c5d2-or4nge16.a.barker-social.com/dog/upload-image",
+          type: "POST",
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function (data) {
+            setImage(data.path);
+          },
+          error: function (data) {
+            imageError();
+          },
+        });
+      });
+
+      $("#image_url_download").click(function (e) {
+        startUploadNewImage();
+
+        $.ajax({
+          url: "https://5cc99203c5d2-or4nge16.a.barker-social.com/dog/upload-image-from-url",
+          type: "POST",
+          data: {
+            upload_session: $("#upload_session").val(),
+            imageUrl: $("#image_url").val(),
+          },
+          success: function (data) {
+            setImage(data.path);
+          },
+          error: function (data) {
+            imageError();
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

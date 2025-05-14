@@ -14,7 +14,7 @@ fi
 
 cd LinkFinder
 echo "[*] Cài đặt LinkFinder..."
-sudo python setup.py install
+sudo python3 setup.py install
 cd ..
 
 if [ ! -d "trufflehog" ]; then
